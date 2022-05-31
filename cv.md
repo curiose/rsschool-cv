@@ -24,6 +24,38 @@ function sumTwoSmallestNumbers(arr) {
   } 
 ```
 
+#### Skills and Proficiency:
+
+*	HTML5, CSS3
+*	Sass
+*	JavaScript Basics
+*	Git, GitHub
+*	VS Code
+*	Adobe Photoshop, Illustrator, Figma
+
+#### Courses:
+
+*	FreeCodeCamp (in progress)
+*	HTML-Academy (in progress)
+*	JavaScript Manual at learnjavascript.ru (in progress)
+*	RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
+* Self-learning (in progress)
+
+#### Pet projects:
+
+*	<https://curiose.github.io/gb-shop/index.html>
+*	<https://curiose.github.io/book-tour-plan-main-master/> 
+*  <https://curiose.github.io/MiTravel/>
+
+#### Languages:
+*	Russian – Native
+*	English – Intermediate B1
+*	Italian – Elementary A2
+
+
+
+
+
 
 
 
