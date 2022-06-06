@@ -22,6 +22,11 @@ li {
     list-style-type: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     margin: 0 auto;
     width: 1140px;
@@ -50,7 +55,7 @@ li {
 
 }
 
-img {
+.header-selfie {
     width: 30%;
     border-radius: 50%;
 }
@@ -64,4 +69,91 @@ img {
 .subtitle {
     font-size: 24px;
     opacity: 0.6;
+}
+
+.profile__container {
+    display: flex;
+    padding: 30px 0;
+}
+
+.profile-main {
+    width: 70%;
+}
+
+.profile__about, .profile__courses, .profile__projects {
+    margin-bottom: 30px;
+}
+
+.profile-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: normal;
+    border: 1px solid var(--fiord-color);
+    width: 22%;
+    padding: 10px 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile-title::before, .profile-title--cind::before {
+    content: '';
+    position: absolute;
+    border-top: 50px solid var(--cinderella-color);
+    border-right: 115px solid transparent;
+    left: 0; 
+    top: 0;
+    z-index: -1;
+}
+
+.profile-title--water::before {
+    content: '';
+    position: absolute;
+    border-top: 50px solid var(--water-color);
+    border-right: 115px solid transparent;
+    left: 0; 
+    top: 0;
+    z-index: -1;
+}
+
+.profile-descr {
+    opacity: 0.7;
+    width: 90%;
+    line-height: 20px;
+}
+
+.profile__courses-item {
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.profile__courses-item:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.profile__projects-title {
+    width: 29%;
+}
+
+.profile__projects-list {
+    display: flex;
+}
+
+.profile__projects-photo {
+    width: 80%;
+}
+
+pre {
+    width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	overflow-y: hidden;
+	font-size: 12px;
+	line-height: 16px;
+	background: var(--water-color);
+    font-family: "Arimo", sans-serif;
+}
+
+.aside {
+    width: 30%;
 }

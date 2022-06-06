@@ -27,12 +27,63 @@
 
    <header class="header">
       <div class="container header__container">
-         <img src="img/my_photo.jpg" alt="my_photo">
+         <img class="header-selfie" src="img/my_photo.jpg" alt="my_photo">
          <div class="header__name">
             <h1 class="title">Julia Sergeeva</h1>
             <h2 class="subtitle">Junior Front-End Developer</h2>
          </div>
       </div>
    </header>
+
+   <main>
+      <section class="profile">
+         <div class="container">
+            <div class="profile__container">
+
+               <div class="profile-main">
+                  <div class="profile__about">
+                     <h3 class="profile-title profile-title--cind">About me</h3>
+                     <p class="profile-descr profile__about-descr">Web development attracts me because it’s a combination of creativity and technology. This is great   what in this area I can always learning and evolving something new.
+                        I don't have any commercial projects experience yet, but I’m keep learning and aiming to find my place in webdev. 
+                        On my previous job I held department manager position and this made possible to get excellent communication skills and leadership experience which I think I can use in future in a new field.</p>
+                  </div>
+   
+                  <div class="profile__courses">
+                     <h3 class="profile-title profile-title--water">Courses</h3>
+                     <ul class="profile__courses-list">
+                        <li class="profile__courses-item">RS Schools Course «JavaScript/Front-end» (in progress)</li>
+                        <li class="profile__courses-item">FreeCodeCamp (in progress)</li>
+                        <li class="profile__courses-item">HTML-Academy (in progress)</li>
+                        <li class="profile__courses-item">JavaScript Manual at learnjavascript.ru (in progress)</li>
+                        <li class="profile__courses-item">Self-learning (in progress)</li>
+                     </ul>
+                  </div>
+
+                  <div class="profile__projects">
+                     <h3 class="profile-title profile-title--cind profile__projects-title">Pet projects</h3>
+                     <ul class="profile__projects-list">
+                        <li class="profile__projects-item"><a href="https://curiose.github.io/gb-shop/index.html"><img class="profile__projects-photo" src="/img/gb_shop.png" alt="shop-site"></a></li>
+                        <li class="profile__projects-item"><a href="https://curiose.github.io/book-tour-plan-main-master/"><img class="profile__projects-photo" src="/img/best_tour.png" alt="best-tour-site"></a></li>
+                        <li class="profile__projects-item"><a href="https://curiose.github.io/MiTravel/"><img class="profile__projects-photo" src="/img/mi_travel.png" alt="mi-travel-site"></a></li>
+                     </ul>
+                  </div>
+
+                  <div class="profile__code">
+                     <h3 class="profile-title profile-title--water">Code</h3>
+                     <pre>
+                        <code>
+                           function sumTwoSmallestNumbers(arr) {  
+                              return arr.slice().sort((a, b) => a - b).slice(0, 2).reduce((a, b) => a + b);
+                              } 
+                        </code>
+                     </pre>
+                  </div>
+               </div>
+               <aside class="aside">12345</aside>
+            </div>
+         </div>
+
+      </section>
+   </main>
 </body>
 </html>
