@@ -182,6 +182,10 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.5s all;
 }
 
+.profile__code-title {
+    width: 15%;
+}
+
 pre {
     width: 100%;
 	padding: 0;
