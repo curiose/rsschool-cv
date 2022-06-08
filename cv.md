@@ -45,7 +45,7 @@ function sumTwoSmallestNumbers(arr) {
 
 *	<https://curiose.github.io/gb-shop/index.html>
 *	<https://curiose.github.io/book-tour-plan-main-master/> 
-*  <https://curiose.github.io/MiTravel/>
+* <https://curiose.github.io/MiTravel/>
 
 #### Languages:
 *	Russian – Native

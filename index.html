@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Julia Sergeeva CV</title>
+   <link rel="stylesheet" href="normalize.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/5967ed30a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   <nav class="nav">
+      <div class="container nav__container">
+         <div class="nav__menu">
+            <ul class="nav__menu-list">
+               <li class="nav__menu-item"><a class="nav__menu-link" href="#contacts">Contacts</a></li>
+               <li class="nav__menu-item"><a class="nav__menu-link" href="#about">About</a></li>
+               <li class="nav__menu-item"><a class="nav__menu-link" href="#code">Code</a></li>
+               <li class="nav__menu-item"><a class="nav__menu-link" href="#skills">Skills</a></li>
+               <li class="nav__menu-item"><a class="nav__menu-link" href="#courses">Courses</a></li>
+               <li class="nav__menu-item"><a class="nav__menu-link" href="#projects">Projects</a></li>
+               <li class="nav__menu-item"><a class="nav__menu-link" href="#lang">Langauges</a></li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <header class="header">
+      <div class="container header__container">
+         <img class="header-selfie" src="img/my_photo.jpg" alt="my_photo">
+         <div class="header__name">
+            <h1 class="title">Julia Sergeeva</h1>
+            <h2 class="subtitle">Junior Front-End Developer</h2>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <section class="profile">
+         <div class="container">
+            <div class="profile__container">
+
+               <div class="profile-main">
+                  <div class="profile__about">
+                     <h3 id="about" class="profile-title profile-title--cind">About me</h3>
+                     <p class="profile-descr profile__about-descr">Web development attracts me because it’s a combination of creativity and technology. This is great   what in this area I can always learning and evolving something new.
+                        I don't have any commercial projects experience yet, but I’m keep learning and aiming to find my place in webdev. 
+                        On my previous job I held department manager position and this made possible to get excellent communication skills and leadership experience which I think I can use in future in a new field.</p>
+                  </div>
+   
+                  <div class="profile__courses">
+                     <h3 id="courses" class="profile-title profile-title--water">Courses</h3>
+                     <ul class="profile__courses-list">
+                        <li class="profile__courses-item">RS Schools Course «JavaScript/Front-end» (in progress)</li>
+                        <li class="profile__courses-item">FreeCodeCamp (in progress)</li>
+                        <li class="profile__courses-item">HTML-Academy (in progress)</li>
+                        <li class="profile__courses-item">JavaScript Manual at learnjavascript.ru (in progress)</li>
+                        <li class="profile__courses-item">Self-learning (in progress)</li>
+                     </ul>
+                  </div>
+
+                  <div class="profile__projects">
+                     <h3 id="projects" class="profile-title profile-title--cind profile__projects-title">projects</h3>
+                     <ul class="profile__projects-list">
+                        <li class="profile__projects-item"><a target="_blank" href="https://curiose.github.io/gb-shop/index.html"><img class="profile__projects-photo" src="/img/gb_shop.png" alt="shop-site"></a></li>
+                        <li class="profile__projects-item"><a target="_blank" href="https://curiose.github.io/book-tour-plan-main-master/"><img class="profile__projects-photo" src="/img/best_tour.png" alt="best-tour-site"></a></li>
+                        <li class="profile__projects-item"><a target="_blank" href="https://curiose.github.io/MiTravel/"><img class="profile__projects-photo" src="/img/mi_travel.png" alt="mi-travel-site"></a></li>
+                     </ul>
+                  </div>
+
+                  <div class="profile__code">
+                     <h3 id="code" class="profile-title profile-title--water profile__code-title">Code</h3>
+                     <pre>
+                        <code>
+                           function sumTwoSmallestNumbers(arr) {  
+                              return arr.slice().sort((a, b) => a - b).slice(0, 2).reduce((a, b) => a + b);
+                              } 
+                        </code>
+                     </pre>
+                  </div>
+               </div>
+               <aside class="aside">
+                  <div class="profile__skills">
+                     <h3 id="skills" class="profile-title profile-title--water profile__skills-title">Skills</h3>
+                     <ul class="profile__skills-list">
+                        <li class="profile__skills-item">HTML5</li>
+                        <li class="profile__skills-item">CSS3</li>
+                        <li class="profile__skills-item">Sass</li>
+                        <li class="profile__skills-item">JavaScript Basics</li>
+                        <li class="profile__skills-item">Git, GitHub</li>
+                        <li class="profile__skills-item">VS Code</li>
+                        <li class="profile__skills-item">Adobe Photoshop, Illustrator, Figma</li>
+                     </ul>
+                  </div>
+
+                  <div class="profile__lang">
+                     <h3 id="lang" class="profile-title profile-title--cind profile__lang-title">Languages</h3>
+                     <ul class="profile__lang-list">
+                        <li class="profile__lang-item">Russian – Native</li>
+                        <li class="profile__lang-item">English – Intermediate B1</li>
+                        <li class="profile__lang-item">Italian – Elementary A2</li>
+                     </ul>
+                  </div>
+
+                  <div class="profile__contacts">
+                     <h3 id="contacts" class="profile-title profile-title--water profile__contacts-title">Contacts</h3>
+                     <ul class="profile__contacts-list">
+                        <li class="profile__contacts-item"><i class="fa-brands fa-telegram"></i><a class="profile__contacts-link" href="https://t.me/JulietteJuly">@JulietteJuly</a> </li>
+                        <li class="profile__contacts-item"><i class="fa-solid fa-blender-phone"></i><a class="profile__contacts-link" href="tel:+7-919-886-51-30">  +7-919-886-51-30</a></li>
+                        <li class="profile__contacts-item"><i class="fa-brands fa-discord"></i><a class="profile__contacts-link" href="https://discord.com/"> Julia Sergeeva (@curiose)</a></li>
+                        <li class="profile__contacts-item"><i class="fa-solid fa-at"></i><a class="profile__contacts-link" href="mailto:attain06@gmail.com"> attain06@gmail.com</a></li>
+                     </ul>
+                  </div>
+               </aside>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="container footer__container">
+         <ul class="footer__container-list">
+            <li class="footer_-container-link"><a href="https://github.com/curiose" class="footer__link">
+               <i class="fa-brands fa-github"></i>
+            </a></li>
+            <li class="footer_-container-link"><a class="footer__link" href="https://rs.school/js/">
+               <img class="footer__link-photo" src="img/rs_school_js.svg" alt="school_logo">
+            </a></li>
+            <li class="footer_-container-link"><span class="footer__date">2022</span></li>
+         </ul>
+      </div>
+   </footer>
+</body>
+</html>

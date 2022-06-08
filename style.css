@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+:root {
+    --fiord-color: #454b73;
+    --cinderella-color: #fbd6d7;
+    --water-color: #dce2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+    color: var(--fiord-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
+    padding: 0 15px;
+}
+
+.nav__menu-list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0;
+}
+
+.nav__menu-item {
+    margin-right: 20px;
+}
+
+.nav__menu-link {
+    position: relative;
+}
+
+.nav__menu-link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; 
+    background-color: var(--fiord-color);
+    transition: width 0.5s; 
+}
+
+.nav__menu-link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: var(--cinderella-color); 
+    transition: width 0.5s; 
+}
+    
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 30px 0;
+
+}
+
+.header-selfie {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+.profile__container {
+    display: flex;
+    padding: 30px 0;
+}
+
+.profile-main {
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.profile__about, .profile__courses, .profile__projects, .profile__skills, .profile__lang {
+    margin-bottom: 30px;
+}
+
+.profile-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: normal;
+    border: 1px solid var(--fiord-color);
+    width: 22%;
+    padding: 10px 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile-title:hover {
+    font-size: 26px;
+    transition: all 0.5s;
+}
+
+.profile-title::before, .profile-title--cind::before {
+    content: '';
+    position: absolute;
+    border-top: 50px solid var(--cinderella-color);
+    border-right: 115px solid transparent;
+    left: 0; 
+    top: 0;
+    z-index: -1;
+}
+
+.profile-title--water::before {
+    content: '';
+    position: absolute;
+    border-top: 50px solid var(--water-color);
+    border-right: 115px solid transparent;
+    left: 0; 
+    top: 0;
+    z-index: -1;
+}
+
+.profile-descr {
+    opacity: 0.7;
+    width: 90%;
+    line-height: 20px;
+}
+
+.profile__courses-item {
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.profile__courses-item:hover {
+    opacity: 1;
+}
+
+.profile__courses-item:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.profile__projects-list {
+    display: flex;
+}
+
+.profile__projects-photo {
+    width: 80%;
+}
+
+.profile__projects-photo:hover {
+    transform: scale(1.2);
+    transition: 0.5s all;
+}
+
+.profile__code-title {
+    width: 15%;
+}
+
+pre {
+    width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	overflow-y: hidden;
+	font-size: 12px;
+	line-height: 16px;
+	background: var(--water-color);
+    font-family: "Arimo", sans-serif;
+}
+
+.aside {
+    width: 30%;
+}
+
+.profile__skills-title {
+    width: 36%;
+}
+
+.profile__skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile__skills-item {
+    opacity: 0.7;
+    margin-right: 9px;
+    background-color: var(--water-color);
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+}
+
+.profile__skills-item:nth-child(2n) {
+    background-color: var(--cinderella-color);
+}
+
+.profile__skills-item:hover {
+    transform: scale(1.2);
+    transition: 0.5s all;
+}
+
+.profile__lang-title {
+    width: 57%;
+}
+
+.profile__lang-item {
+    opacity: 0.7;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: var(--cinderella-color);
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.profile__lang-item:hover {
+    background-color: var(--fiord-color);
+    color: var(--cinderella-color);
+}
+
+.profile__contacts-title {
+    width: 51%;
+}
+
+.profile__contacts-item {
+    margin-bottom: 15px;
+}
+
+.fa-brands, .fa-blender-phone, .fa-at {
+    margin-right: 20px;
+    color: var(--fiord-color);
+    font-size: 20px;
+}
+
+.profile__hobbies-title {
+    width: 44%;
+}
+
+.fa-solid {
+    color: var(--fiord-color);
+}
+
+.footer__container-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link-photo {
+    width: 100px;
+    height: 70px;
+}
+
+.fa-github {
+    font-size: 30px;
+}
+
+.fa-github:hover {
+    color: var(--cinderella-color);
+}
+
