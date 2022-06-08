@@ -209,6 +209,10 @@ pre {
     background-color: var(--cinderella-color);
 }
 
+.profile__skills-item:hover {
+    transform: scale(1.2);
+}
+
 .profile__lang-title {
     width: 57%;
 }
@@ -221,6 +225,11 @@ pre {
     text-align: center;
     font-size: 20px;
     padding: 5px;
+}
+
+.profile__lang-item:hover {
+    background-color: var(--fiord-color);
+    color: var(--cinderella-color);
 }
 
 .profile__contacts-title {
