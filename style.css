@@ -43,6 +43,34 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 20px;
 }
 
+.nav__menu-link {
+    position: relative;
+}
+
+.nav__menu-link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: var(--fiord-color); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.nav__menu-link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: var(--cinderella-color); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+    
 .header__container {
     display: flex;
     justify-content: space-around;
