@@ -54,9 +54,9 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: -3px;
     width: 0;
-    height: 2px; /* Высота линии */
-    background-color: var(--fiord-color); /* Цвет подчеркивания при исчезании линии*/
-    transition: width 0.5s; /* Время эффекта */
+    height: 2px; 
+    background-color: var(--fiord-color);
+    transition: width 0.5s; 
 }
 
 .nav__menu-link:hover:after {
@@ -66,9 +66,9 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 0;
     bottom: -3px;
-    height: 2px; /* Высота линии */
-    background-color: var(--cinderella-color); /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s;  /* Время эффекта */
+    height: 2px;
+    background-color: var(--cinderella-color); 
+    transition: width 0.5s; 
 }
     
 .header__container {
@@ -125,6 +125,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
+.profile-title:hover {
+    font-size: 26px;
+    transition: all 0.5s;
+}
+
 .profile-title::before, .profile-title--cind::before {
     content: '';
     position: absolute;
@@ -156,12 +161,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
 }
 
-.profile__courses-item:nth-child(5) {
-    margin-bottom: 0;
+.profile__courses-item:hover {
+    opacity: 1;
 }
 
-.profile__projects-title {
-    width: 29%;
+.profile__courses-item:nth-child(5) {
+    margin-bottom: 0;
 }
 
 .profile__projects-list {
@@ -170,6 +175,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .profile__projects-photo {
     width: 80%;
+}
+
+.profile__projects-photo:hover {
+    transform: scale(1.2);
+    transition: 0.5s all;
 }
 
 pre {
@@ -211,6 +221,7 @@ pre {
 
 .profile__skills-item:hover {
     transform: scale(1.2);
+    transition: 0.5s all;
 }
 
 .profile__lang-title {
@@ -240,8 +251,8 @@ pre {
     margin-bottom: 15px;
 }
 
-.fa-telegram, .fa-blender-phone {
-    margin-right: 5px;
+.fa-brands, .fa-blender-phone, .fa-at {
+    margin-right: 20px;
     color: var(--fiord-color);
     font-size: 20px;
 }
@@ -267,5 +278,9 @@ pre {
 
 .fa-github {
     font-size: 30px;
+}
+
+.fa-github:hover {
+    color: var(--cinderella-color);
 }
 
