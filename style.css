@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .profile-main {
     width: 70%;
+    margin-bottom: 30px;
 }
 
 .profile__about, .profile__courses, .profile__projects, .profile__skills, .profile__lang {
@@ -206,3 +207,27 @@ pre {
     color: var(--fiord-color);
     font-size: 20px;
 }
+
+.profile__hobbies-title {
+    width: 44%;
+}
+
+.fa-solid {
+    color: var(--fiord-color);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link-photo {
+    width: 100px;
+    height: 70px;
+}
+
+.fa-github {
+    font-size: 30px;
+}
+
